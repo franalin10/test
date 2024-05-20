@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <style>
+        #bar-chart {
+            max-width: 1000px;
+        }
+        #form {
+            padding: 40px;
+        }
+        .cube {
+            width: 100px;
+            height: 100px;
+            padding: 30px;
+            font-size: 40px;
+            float: left;
+            border: 2px rgb(0,0,0,0,1) solid;
+            background: rgb(240,240,240);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="form">
+        <label for="soldi">INVESTIMENTO</label>
+        <input type="number" name="" id="soldi">
+        <label for="anni">ANNI</label>
+        <input type="number" name="" id="anni">
+        <label for="interessi">TASSO D'INTERESSE</label>
+        <input type="number" name="" id="interessi">
+        <label for="aggiunta">ADD+ ANNUO</label>
+        <input type="number" name="" id="agg">
+        <button onClick="calcola()">SCOPRI</button>
+    </div>
+    <p>Capitale investito</p>
+    <div class="cube" id="inv"></div>
+    <p>Interesse Maturato</p>
+    <div class="cube" id="int"></div>
+
+
+
+
+</html>
+<!-- dove inserire il grafico -->
+<canvas id="bar-chart">
+
+</canvas>
+<script src="grafico.js"></script>
+<!-- Ottimi altri esempi di grafici -->
+<!-- https://tobiasahlin.com/blog/chartjs-charts-to-get-you-started/   -->
+</body>
+</html>
